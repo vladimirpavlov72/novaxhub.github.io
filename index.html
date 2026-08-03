@@ -1,32 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOVAX — Privacy-first Android apps</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0a0f1e;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 24px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVAX — честные приложения без подписок и рекламы</title>
+    <meta name="description" content="NOVAX — независимая студия Android-приложений. Cleaner (очистка памяти), QR (сканер и генератор QR-кодов), H₂O (трекер воды), Habits+ (трекер привычек). Разовая покупка 159 ₽, без подписок, без рекламы, данные только на устройстве." />
+    <meta name="keywords" content="очистка памяти андроид, сканер QR кодов, генератор QR, трекер воды, трекер привычек, без подписки, без рекламы, RuStore" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://novaxhub.ru/" />
+    <meta name="theme-color" content="#0a0e17" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NOVAX" />
+    <meta property="og:title" content="NOVAX — честные приложения без подписок и рекламы" />
+    <meta property="og:description" content="Cleaner, QR, H₂O, Habits+. Разовая покупка 159 ₽. Без подписок, без рекламы, данные только на вашем устройстве." />
+    <meta property="og:url" content="https://novaxhub.ru/" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:image" content="https://novaxhub.ru/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://novaxhub.ru/og-image.png" />
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NOVAX — честные приложения",
+      "url": "https://novaxhub.ru/",
+      "inLanguage": "ru-RU",
+      "description": "Официальный сайт студии NOVAX: Cleaner, QR, H₂O, Habits+ — Android-приложения без подписок и рекламы, разовая покупка 159 ₽.",
+      "publisher": { "@type": "Organization", "name": "NOVAX", "url": "https://novaxhub.ru/" }
     }
-    h1 { font-size: 48px; color: #00d4aa; margin-bottom: 16px; }
-    p { font-size: 18px; color: #ffffffb3; margin-bottom: 12px; line-height: 1.6; }
-    a { color: #00d4aa; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <h1>NOVAX</h1>
-  <p>Privacy-first Android apps. No tracking. No ads. No subscriptions.</p>
-  <p>Contact: <a href="mailto:pgs2012@bk.ru">pgs2012@bk.ru</a></p>
-</body>
+    </script>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NOVAX",
+      "url": "https://novaxhub.ru/",
+      "description": "Независимая студия Android-приложений. Принципы: Privacy First, честная цена без подписок, 12 языков с первого дня.",
+      "sameAs": [
+        "https://t.me/novax_apps",
+        "https://www.rustore.ru/catalog/app/com.novax.cleaner"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: Products -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Приложения NOVAX",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Cleaner — очистка памяти",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication",
+            "description": "Честный клинер для Android: показывает реальный размер кэша и мусора, очищает только безопасные данные, не удаляет файлы пользователя. Без рекламы и подписок.",
+            "offers": { "@type": "Offer", "price": "159", "priceCurrency": "RUB", "availability": "https://schema.org/InStock" },
+            "url": "https://www.rustore.ru/catalog/app/com.novax.cleaner"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "QR — сканер и генератор",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication",
+            "description": "Сканер и генератор QR-кодов и штрих-кодов. Работает офлайн, сканирует камерой и из галереи, создаёт QR для ссылок, Wi-Fi, контактов.",
+            "offers": { "@type": "Offer", "price": "159", "priceCurrency": "RUB" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "H₂O — трекер воды",
+            "operatingSystem": "Android",
+            "applicationCategory": "HealthApplication",
+            "description": "Трекер потребления воды: умное распределение нормы на день, быстрое добавление из шторки уведомлений, учёт типа напитка, недельные челленджи.",
+            "offers": { "@type": "Offer", "price": "159", "priceCurrency": "RUB" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Habits+ — трекер привычек",
+            "operatingSystem": "Android",
+            "applicationCategory": "LifestyleApplication",
+            "description": "Трекер привычек для Android: формирование и отслеживание ежедневных привычек, статистика и серии без давления и геймификационного шантажа.",
+            "offers": { "@type": "Offer", "price": "159", "priceCurrency": "RUB" }
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько стоят приложения NOVAX?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Каждое приложение NOVAX — разовая покупка 159 ₽ ($2.99 / €2.99 в других регионах). Никаких подписок, рекламы и скрытых платежей. Платите один раз — пользуетесь навсегда." }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой клинер для Android не врёт про очистку памяти?",
+          "acceptedAnswer": { "@type": "Answer", "text": "NOVAX Cleaner показывает реальный размер кэша и удаляемых данных, очищает только безопасные системные области и никогда не трогает личные файлы. Принцип «Trash Can Not Delete»: приложение не может удалить то, что важно пользователю." }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли сканер QR-кодов без рекламы и подписок?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Да — NOVAX QR: сканер и генератор QR-кодов и штрих-кодов, работает полностью офлайн, сканирует камерой и изображения из галереи, создаёт QR для ссылок, Wi-Fi и контактов. Разовая покупка 159 ₽." }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда отправляются мои данные?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Никуда. Privacy First — главный принцип NOVAX: все данные хранятся только на вашем устройстве, у приложений нет серверов сбора аналитики и рекламных трекеров." }
+        },
+        {
+          "@type": "Question",
+          "name": "Где скачать приложения NOVAX?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Приложения NOVAX доступны в RuStore. Telegram-канал проекта: t.me/novax_apps." }
+        }
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="./assets/index-Bqs_CaT7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CxTYPNmr.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
