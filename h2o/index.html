@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVAX Пей H₂O — пей достаточно воды каждый день</title>
+    <meta name="description" content="Забываешь пить воду? NOVAX H₂O поможет выработать привычку: персональная норма, напоминания по расписанию и наглядная статистика. Разовая покупка, без подписок." />
+    <meta name="keywords" content="NOVAX H2O, пить воду, трекер воды, напоминание пить воду, водный баланс, сколько воды пить, контроль воды, hydration app, RuStore" />
+    <meta name="author" content="NOVAX" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://novaxhub.ru/h2o/" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NOVAX" />
+    <meta property="og:title" content="NOVAX Пей H₂O — пей достаточно воды каждый день" />
+    <meta property="og:description" content="Забываешь пить воду? Персональная норма, напоминания по расписанию и статистика. Разовая покупка, без подписок." />
+    <meta property="og:url" content="https://novaxhub.ru/h2o/" />
+    <meta property="og:image" content="https://novaxhub.ru/og.png" />
+    <meta property="og:image:alt" content="NOVAX Пей H₂O — трекер воды для Android" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NOVAX Пей H₂O — пей достаточно воды каждый день" />
+    <meta name="twitter:description" content="Забываешь пить воду? Персональная норма, напоминания по расписанию и статистика. Разовая покупка, без подписок." />
+    <meta name="twitter:image" content="https://novaxhub.ru/og.png" />
+    <meta name="twitter:image:alt" content="NOVAX Пей H₂O — трекер воды для Android" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                bg: '#0a0a0f',
+                card: 'rgba(255, 255, 255, 0.03)',
+                border: 'rgba(255, 255, 255, 0.08)',
+                indigo: '#6366f1',
+                sky: '#38bdf8',
+                blue: '#2563eb',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        background-color: #0a0a0f;
+        color: #e4e4e7;
+        font-family: 'Inter', system-ui, sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1rem;
+      }
+      .card-hover {
+        transition: all 0.2s ease;
+      }
+      .card-hover:hover {
+        border-color: rgba(56, 189, 248, 0.4);
+        box-shadow: 0 0 40px rgba(56, 189, 248, 0.12);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+        transition: all 0.2s ease;
+      }
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 40px rgba(56, 189, 248, 0.35);
+      }
+      .glow-sky {
+        box-shadow: 0 0 60px rgba(56, 189, 248, 0.15);
+      }
+      .feature-bullet {
+        background: rgba(56, 189, 248, 0.2);
+      }
+      details > summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] summary ~ * {
+        animation: sweep 0.2s ease-in-out;
+      }
+      @keyframes sweep {
+        0%    { opacity: 0; transform: translateY(-5px); }
+        100%  { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
+    <!-- JSON-LD: MobileApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "NOVAX Пей H₂O",
+      "description": "Трекер воды для Android с персональной нормой, напоминаниями по расписанию и наглядной статистикой. Разовая покупка, без подписок и рекламы.",
+      "operatingSystem": "Android",
+      "applicationCategory": "HealthApplication",
+      "url": "https://novaxhub.ru/h2o/",
+      "featureList": [
+        "Персональная норма воды",
+        "Напоминания по расписанию",
+        "Наглядная статистика дня",
+        "История потребления",
+        "Без подписок и рекламы",
+        "Работает локально, без сбора данных"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "159",
+        "priceCurrency": "RUB",
+        "priceValidUntil": "2027-08-12"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько воды нужно пить в день?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Средняя норма — около 2 литров в сутки, но она зависит от веса, активности и климата. NOVAX H₂O рассчитывает персональную норму на основе твоих параметров и напоминает попить вовремя."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как не забывать пить воду?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Приложение отправляет мягкие напоминания по расписанию: утром, днём и вечером. Можно настроить время под свой режим, чтобы выработать устойчивую привычку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "H₂O бесплатный?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Приложение продаётся за разовую покупку 159 ₽ в RuStore. Никаких подписок, рекламы и скрытых платежей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли отслеживать не только воду?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, в NOVAX H₂O можно добавлять чай, кофе, соки и другие напитки. Приложение учитывает их в общей статистике, но вода остаётся основной метрикой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Данные хранятся локально?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, все записи о потреблении воды хранятся только на телефоне. Не требуется аккаунт, регистрация или подключение к интернету."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как выработать привычку пить воду?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Начни с малого: пей стакан воды утром и после каждого приёма пищи. NOVAX H₂O поможет закрепить ритм напоминаниями и покажет прогресс в удобной статистике."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#0a0a0f]/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+        <a href="https://novaxhub.ru/" class="flex items-center gap-2 text-lg font-bold text-white">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 text-xs font-black">N</span>
+          NOVAX
+        </a>
+        <nav class="hidden items-center gap-6 text-sm text-zinc-400 sm:flex">
+          <a href="#problems" class="hover:text-white transition-colors">Проблемы</a>
+          <a href="#how-it-works" class="hover:text-white transition-colors">Как работает</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+        </nav>
+        <div class="hidden items-center gap-3 sm:flex">
+          <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-zinc-200 transition-colors hover:border-cyan-400/40 hover:text-white">
+            Telegram
+          </a>
+        </div>
+        <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">
+          Скоро в RuStore
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-20">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute top-20 left-1/4 h-64 w-64 rounded-full bg-sky-500/10 blur-3xl"></div>
+        <div class="absolute bottom-20 right-1/4 h-80 w-80 rounded-full bg-indigo-500/10 blur-3xl"></div>
+      </div>
+
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="grid items-start gap-8 lg:grid-cols-2">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1.5 text-xs font-semibold text-sky-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+              Для Android · Разовая покупка
+            </div>
+            <h1 class="mt-5 text-3xl font-black leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
+              Пей достаточно воды <span class="gradient-text">каждый день</span>
+            </h1>
+            <p class="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">
+              Забываешь пить воду, чувствуешь усталость или головную боль? <strong class="text-zinc-200">NOVAX Пей H₂O</strong> рассчитает твою норму, напомнит попить вовремя и покажет прогресс в удобной статистике.
+            </p>
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="btn-primary inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-base font-bold text-white">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                Скоро в RuStore — 159 ₽
+              </a>
+              <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-3.5 text-base font-semibold text-zinc-200 transition-colors hover:border-cyan-400/40 hover:text-white">
+                Telegram-канал
+              </a>
+            </div>
+            <p class="mt-4 text-xs text-zinc-500">Без подписок · Без рекламы · Без сбора данных</p>
+          </div>
+
+          <div class="relative flex justify-center lg:justify-end">
+            <div class="card glow-sky relative w-full max-w-xs p-4 sm:p-5 lg:max-w-sm">
+              <div class="flex items-center gap-3">
+                <img src="/icons/apps/h2o.png" alt="NOVAX Пей H₂O" class="h-14 w-14 rounded-2xl" />
+                <div>
+                  <h2 class="text-lg font-bold text-white">Пей H₂O</h2>
+                  <p class="text-xs text-sky-400 sm:text-sm">Пей достаточно воды каждый день</p>
+                </div>
+              </div>
+              <div class="mt-4 space-y-2">
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2.5">
+                  <span class="text-sm text-zinc-300">Норма на день</span>
+                  <span class="text-sm font-bold text-sky-400">2 100 мл</span>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2.5">
+                  <span class="text-sm text-zinc-300">Выпито сегодня</span>
+                  <span class="text-sm font-bold text-sky-400">1 450 мл</span>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2.5">
+                  <span class="text-sm text-zinc-300">Следующее напоминание</span>
+                  <span class="text-sm font-bold text-sky-400">15:00</span>
+                </div>
+              </div>
+              <div class="mt-4 rounded-xl bg-sky-500/10 px-3 py-2.5 text-center text-sm font-semibold text-sky-300">
+                ✅ Осталось допить 650 мл
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems -->
+    <section id="problems" class="border-y border-white/5 bg-white/[0.015] py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">Когда H₂O выручает</p>
+        <h2 class="mt-3 text-center text-3xl font-black tracking-tight sm:text-4xl">Если это про тебя — пора пить воду</h2>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card card-hover p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-white">Забываю пить</h3>
+            <p class="mt-2 text-sm text-zinc-400">Рабочий день пролетает, а стакан воды так и не допит. Напоминания помогут сделать это привычкой.</p>
+          </div>
+
+          <div class="card card-hover p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m11.314 0l-.707.707M12 17.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-white">Усталость и головная боль</h3>
+            <p class="mt-2 text-sm text-zinc-400">Дегидратация частая причина сонливости. H₂O поможет держать водный баланс в норме.</p>
+          </div>
+
+          <div class="card card-hover p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-white">Не знаю норму</h3>
+            <p class="mt-2 text-sm text-zinc-400">Сколько воды нужно именно мне? Приложение рассчитает норму по весу, полу и активности.</p>
+          </div>
+
+          <div class="card card-hover p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l3 3m0 0l3-3m-3 3V4.5"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-white">Нет мотивации</h3>
+            <p class="mt-2 text-sm text-zinc-400">Наглядная статистика и история помогут увидеть прогресс и не бросить начатое.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">Как это работает</p>
+        <h2 class="mt-3 text-center text-3xl font-black tracking-tight sm:text-4xl">Три шага до привычки пить воду</h2>
+
+        <div class="mt-12 grid gap-8 sm:grid-cols-3">
+          <div class="relative text-center">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-sky-500/30 bg-sky-500/10 text-xl font-black text-sky-400">1</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Расскажи о себе</h3>
+            <p class="mt-2 text-sm text-zinc-400">Укажи вес, пол, климат и активность. H₂O рассчитает персональную норму воды на день.</p>
+          </div>
+          <div class="relative text-center">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-sky-500/30 bg-sky-500/10 text-xl font-black text-sky-400">2</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Отмечай каждый стакан</h3>
+            <p class="mt-2 text-sm text-zinc-400">Добавляй воду и другие напитки в один тап. Выбирай удобный объём или укажи свой.</p>
+          </div>
+          <div class="relative text-center">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-sky-500/30 bg-sky-500/10 text-xl font-black text-sky-400">3</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Следи за прогрессом</h3>
+            <p class="mt-2 text-sm text-zinc-400">Статистика дня и история помогут увидеть, как растёт твоя привычка пить воду.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="border-y border-white/5 bg-white/[0.015] py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">Почему NOVAX H₂O</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Водный баланс без подписок и рекламы</h2>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="feature-bullet mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full">
+                  <svg class="h-3 w-3 text-sky-400" fill="none" viewBox="0 0 12 12" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.2l2.6 2.6L10 3.4"/></svg>
+                </span>
+                <span class="text-zinc-300"><strong class="text-white">Персональная норма.</strong> Расчёт по весу, полу, климату и физической активности.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="feature-bullet mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full">
+                  <svg class="h-3 w-3 text-sky-400" fill="none" viewBox="0 0 12 12" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.2l2.6 2.6L10 3.4"/></svg>
+                </span>
+                <span class="text-zinc-300"><strong class="text-white">Напоминания по расписанию.</strong> Мягкие уведомления в удобное для тебя время.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="feature-bullet mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full">
+                  <svg class="h-3 w-3 text-sky-400" fill="none" viewBox="0 0 12 12" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.2l2.6 2.6L10 3.4"/></svg>
+                </span>
+                <span class="text-zinc-300"><strong class="text-white">Наглядная статистика.</strong> Видишь прогресс дня, недели и историю всех записей.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="feature-bullet mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full">
+                  <svg class="h-3 w-3 text-sky-400" fill="none" viewBox="0 0 12 12" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.2l2.6 2.6L10 3.4"/></svg>
+                </span>
+                <span class="text-zinc-300"><strong class="text-white">Приватность.</strong> Всё работает локально, не требует аккаунта и не собирает данные.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card glow-sky p-6 sm:p-8">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                <span class="text-sm text-zinc-300">Тип лицензии</span>
+                <span class="text-sm font-semibold text-sky-400">Разовая покупка</span>
+              </div>
+              <div class="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                <span class="text-sm text-zinc-300">Цена</span>
+                <span class="text-sm font-semibold text-white">159 ₽</span>
+              </div>
+              <div class="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                <span class="text-sm text-zinc-300">Подписки</span>
+                <span class="text-sm font-semibold text-sky-400">Нет</span>
+              </div>
+              <div class="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                <span class="text-sm text-zinc-300">Реклама</span>
+                <span class="text-sm font-semibold text-sky-400">Нет</span>
+              </div>
+              <div class="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                <span class="text-sm text-zinc-300">Сбор данных</span>
+                <span class="text-sm font-semibold text-sky-400">Нет</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">Вопросы и ответы</p>
+        <h2 class="mt-3 text-center text-3xl font-black tracking-tight sm:text-4xl">Часто спрашивают о H₂O</h2>
+
+        <div class="mt-10 space-y-3">
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              Сколько воды нужно пить в день?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Средняя норма — около 2 литров в сутки, но она зависит от веса, активности и климата. NOVAX H₂O рассчитывает персональную норму на основе твоих параметров.
+            </div>
+          </details>
+
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              Как не забывать пить воду?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Приложение отправляет мягкие напоминания по расписанию: утром, днём и вечером. Можно настроить время под свой режим, чтобы выработать устойчивую привычку.
+            </div>
+          </details>
+
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              H₂O бесплатный?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Приложение продаётся за разовую покупку 159 ₽ в RuStore. Никаких подписок, рекламы и скрытых платежей.
+            </div>
+          </details>
+
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              Можно ли отслеживать не только воду?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Да, в NOVAX H₂O можно добавлять чай, кофе, соки и другие напитки. Приложение учитывает их в общей статистике, но вода остаётся основной метрикой.
+            </div>
+          </details>
+
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              Данные хранятся локально?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Да, все записи о потреблении воды хранятся только на телефоне. Не требуется аккаунт, регистрация или подключение к интернету.
+            </div>
+          </details>
+
+          <details class="card overflow-hidden">
+            <summary class="flex items-center justify-between p-5 text-left font-semibold text-white hover:bg-white/[0.02]">
+              Как выработать привычку пить воду?
+              <svg class="h-5 w-5 text-zinc-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="border-t border-white/5 px-5 pb-5 pt-4 text-sm leading-relaxed text-zinc-400">
+              Начни с малого: пей стакан воды утром и после каждого приёма пищи. NOVAX H₂O поможет закрепить ритм напоминаниями и покажет прогресс в удобной статистике.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden border-t border-white/5 py-20 sm:py-28">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-500/10 blur-3xl"></div>
+      </div>
+      <div class="mx-auto max-w-3xl px-4 text-center sm:px-6">
+        <h2 class="text-3xl font-black tracking-tight sm:text-4xl">Начни пить воду регулярно</h2>
+        <p class="mt-4 text-lg text-zinc-400">Разовая покупка 159 ₽. Без подписок, рекламы и сбора данных.</p>
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="btn-primary inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-bold text-white">
+            Скоро в RuStore
+          </a>
+          <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-8 py-4 text-base font-semibold text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">
+            Telegram-канал
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-[#0a0a0f] py-8">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-sm text-zinc-500 sm:flex-row sm:px-6">
+        <p>© 2026 NOVAX. Честные приложения для Android.</p>
+        <div class="flex gap-5">
+          <a href="https://t.me/novax_apps" target="_blank" rel="noreferrer" class="hover:text-zinc-300 transition-colors">Telegram</a>
+          <a href="https://t.me/max" target="_blank" rel="noreferrer" class="hover:text-zinc-300 transition-colors">Макс</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
