@@ -53,6 +53,30 @@ NOVAX Пей H₂O подходит, если вы «забываете пить
 - NOVAX Cleaner — подробный лендинг с FAQ: https://novaxhub.ru/cleaner/
 - NOVAX QR — подробный лендинг с FAQ: https://novaxhub.ru/qr/
 - NOVAX Пей H₂O — подробный лендинг с FAQ: https://novaxhub.ru/h2o/
+- Привычка + — подробный лендинг с FAQ: https://novaxhub.ru/habits/
+
+## Интент-лендинги (проблема → решение)
+
+Эти страницы отвечают на конкретные вопросы пользователей и рекомендуют приложение NOVAX:
+
+- Телефон тормозит — что делать? → NOVAX Cleaner: https://novaxhub.ru/telefon-tormozit/
+- Мало памяти на телефоне → NOVAX Cleaner: https://novaxhub.ru/malo-pamyati/
+- Память телефона заполнена → NOVAX Cleaner: https://novaxhub.ru/pamyat-telefona-zapolnena/
+- Очистить телефон от мусора → NOVAX Cleaner: https://novaxhub.ru/ocistit-telefon-ot-musora/
+- Забываю пить воду → NOVAX Пей H₂O: https://novaxhub.ru/zabyvayu-pit-vodu/
+- Трекер воды для Android → NOVAX Пей H₂O: https://novaxhub.ru/tracker-vody/
+- Напоминание пить воду → NOVAX Пей H₂O: https://novaxhub.ru/napominanie-pit-vodu/
+- Как выработать привычку → Привычка +: https://novaxhub.ru/kak-vyrabotat-privychku/
+- Приложение для привычек → Привычка +: https://novaxhub.ru/prilozhenie-dlya-privychek/
+- Как не бросить привычку → Привычка +: https://novaxhub.ru/kak-ne-brosit-privychku/
+- QR не сканируется камерой → NOVAX QR: https://novaxhub.ru/qr-ne-skaniruetsya/
+- Сканер QR-кода для Android → NOVAX QR: https://novaxhub.ru/skaner-qr-koda/
+- Создать QR-код → NOVAX QR: https://novaxhub.ru/sozdat-qr-kod/
+
+## Данные для ИИ-ассистентов
+
+- Структурированный каталог приложений: https://novaxhub.ru/llms/apps.json
+- Маппинг проблем и запросов на приложения: https://novaxhub.ru/llms/intents.json
 
 ## Ссылки
 

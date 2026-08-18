@@ -1,0 +1,154 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-08-18",
+  "publisher": {
+    "name": "NOVAX",
+    "url": "https://novaxhub.ru",
+    "description": "Независимая студия мобильных приложений для Android. Честные приложения: плати один раз, пользуйся навсегда. Без подписок, рекламы и сбора данных.",
+    "ru_store_developer": "https://www.rustore.ru/catalog/developer/h5t6zw"
+  },
+  "apps": [
+    {
+      "id": "cleaner",
+      "name": "NOVAX Cleaner",
+      "tagline": "Освободи место и верни телефону скорость",
+      "problems": [
+        "Телефон тормозит",
+        "Мало памяти на телефоне",
+        "Нужно очистить кэш Android",
+        "Много дубликатов фото"
+      ],
+      "solution": "Умный поиск мусора, кэша и дубликатов фото. Освобождает память и ускоряет Android.",
+      "category": "UtilityApplication",
+      "price": {
+        "amount": "159",
+        "currency": "RUB",
+        "model": "one-time"
+      },
+      "trial": null,
+      "platforms": ["Android"],
+      "store_url": "https://www.rustore.ru/catalog/app/com.novax.cleaner",
+      "package": "com.novax.cleaner",
+      "landing_url": "https://novaxhub.ru/cleaner/",
+      "intent_landings": [
+        "https://novaxhub.ru/telefon-tormozit/",
+        "https://novaxhub.ru/malo-pamyati/"
+      ],
+      "key_features": [
+        "Очистка кэша приложений",
+        "Поиск дубликатов фото",
+        "Удаление тяжёлых файлов",
+        "Работа без интернета",
+        "Без рекламы и сбора данных"
+      ]
+    },
+    {
+      "id": "qr",
+      "name": "NOVAX QR",
+      "tagline": "Отсканируй или создай QR-код за секунду",
+      "problems": [
+        "Камера не считывает QR",
+        "Нужно отсканировать QR без интернета",
+        "Нужно создать QR для Wi-Fi",
+        "QR-код в галерее"
+      ],
+      "solution": "Быстрое сканирование QR и штрих-кодов, распознавание из галереи, создание кодов, работа без интернета.",
+      "category": "UtilityApplication",
+      "price": {
+        "amount": "159",
+        "currency": "RUB",
+        "model": "one-time"
+      },
+      "trial": null,
+      "platforms": ["Android"],
+      "store_url": "https://www.rustore.ru/catalog/app/com.novax.qrscanner",
+      "package": "com.novax.qrscanner",
+      "landing_url": "https://novaxhub.ru/qr/",
+      "intent_landings": [
+        "https://novaxhub.ru/qr-ne-skaniruetsya/"
+      ],
+      "key_features": [
+        "QR и штрих-коды",
+        "Распознавание из галереи",
+        "Создание QR-кодов",
+        "История сканирований",
+        "Работа без интернета"
+      ]
+    },
+    {
+      "id": "h2o",
+      "name": "NOVAX Пей H₂O",
+      "tagline": "Пей достаточно воды каждый день",
+      "problems": [
+        "Забываю пить воду",
+        "Нужен трекер воды",
+        "Как рассчитать норму воды",
+        "Напоминание пить воду"
+      ],
+      "solution": "Трекер воды с персональной нормой, умными напоминаниями и статистикой. Без подписок.",
+      "category": "HealthApplication",
+      "price": {
+        "amount": "159",
+        "currency": "RUB",
+        "model": "one-time"
+      },
+      "trial": {
+        "days": 7,
+        "description": "7 дней бесплатно"
+      },
+      "platforms": ["Android"],
+      "store_url": "https://www.rustore.ru/catalog/app/com.novax.h2o",
+      "package": "com.novax.h2o",
+      "landing_url": "https://novaxhub.ru/h2o/",
+      "intent_landings": [
+        "https://novaxhub.ru/zabyvayu-pit-vodu/"
+      ],
+      "key_features": [
+        "Персональная норма воды",
+        "Умные напоминания",
+        "Быстрое добавление порций",
+        "История и статистика",
+        "Учёт чая, кофе и соков"
+      ]
+    },
+    {
+      "id": "habits",
+      "name": "Привычка +",
+      "tagline": "Выработай полезную привычку и не срывайся",
+      "problems": [
+        "Как выработать привычку",
+        "Не бросить привычку на третий день",
+        "Счётчик серии дней",
+        "Трекер привычек без подписок"
+      ],
+      "solution": "Трекер привычек с сериями дней, напоминаниями и визуальным прогрессом. Без аккаунтов и подписок.",
+      "category": "LifestyleApplication",
+      "price": {
+        "amount": "159",
+        "currency": "RUB",
+        "model": "one-time"
+      },
+      "trial": null,
+      "platforms": ["Android"],
+      "store_url": "https://www.rustore.ru/catalog/app/com.novax.habits",
+      "package": "com.novax.habits",
+      "landing_url": "https://novaxhub.ru/habits/",
+      "intent_landings": [
+        "https://novaxhub.ru/kak-vyrabotat-privychku/"
+      ],
+      "key_features": [
+        "Серии дней",
+        "Напоминания утро/день/вечер",
+        "Визуальный прогресс",
+        "Пресеты привычек",
+        "Без аккаунтов и облаков"
+      ]
+    }
+  ],
+  "common_values": {
+    "pricing_model": "Разовая покупка. Никаких подписок.",
+    "privacy": "Данные хранятся только на устройстве. Нет рекламы, аналитики и облаков.",
+    "platform": "Android",
+    "store": "RuStore"
+  }
+}
