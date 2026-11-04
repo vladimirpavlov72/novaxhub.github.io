@@ -90,4 +90,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://novaxhub.ru/privacy/</loc></url>
+  <url><loc>https://novaxhub.ru/privacy-files/</loc></url>
+  <url><loc>https://novaxhub.ru/eula-files/</loc></url>
+  <url><loc>https://novaxhub.app/</loc></url>
+  <url><loc>https://novaxhub.app/privacy-en/</loc></url>
 </urlset>
