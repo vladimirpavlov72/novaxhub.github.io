@@ -25,4 +25,4 @@ User-agent: YandexBot
 Allow: /
 
 # Sitemap
-Sitemap: https://novaxhub.ru/sitemap.xml
+Sitemap: https://novaxhub.app/sitemap.xml
